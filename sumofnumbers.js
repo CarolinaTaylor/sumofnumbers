@@ -27,8 +27,6 @@ function sumRecursion(nums) {
   return nums[0] + sumRecursion(nums.slice(1, nums.length));
 }
 console.log(sumRecursion(testNums));
-const simpleWay = (nums) => _.reduce((nums, function (nemo, num) { return nemo + num; }, 0);
+const simpleWay = (nums) => _.reduce(nums, function (nemo, num) { return nemo + num; }, 0);
 
-}
 console.log(simpleWay(testNums));
-
